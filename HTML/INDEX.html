@@ -1,0 +1,203 @@
+Jean Carlos Alvarez Duarte
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad de Córdoba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(149, 188, 171);
+            padding: 20px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZdp1nIZab-Nb68rpOJxY7YXlfw2R4WaeoMg&s');
+            background-size: cover;
+            color: white;
+        }
+        .logo {
+            height: 100px;
+        }
+        .titulo {
+            font-size: 40px;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(40deg, #4ea005, #8cec35);
+            padding: 15px;
+        }
+        .nav-link {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: rgb(84, 244, 153);
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .section {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        .noticias {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+        .noticia {
+            flex: 0 0 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .eventos, .testimonios {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .evento, .testimonio {
+            flex: 0 0 45%;
+            background: #e3f2e1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(149, 188, 171);
+            border-radius: 20px 20px 0 0;
+            color: white;
+        }
+        .formulario-contacto {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .formulario-contacto input, .formulario-contacto textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .formulario-contacto button {
+            padding: 10px;
+            background-color: #4ea005;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .formulario-contacto button:hover {
+            background-color: #3a7a04;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Escudo_Universidad_de_C%C3%B3rdoba.png" alt="Logo Universidad de Córdoba" class="logo">
+        <h1 class="titulo">Universidad de Córdoba</h1>
+    </header>
+
+    <nav>
+        <a href="#" class="nav-link">Inicio</a>
+        <a href="#" class="nav-link">Nosotros</a>
+        <a href="#" class="nav-link">Académico</a>
+        <a href="#" class="nav-link">Investigación</a>
+        <a href="#" class="nav-link">Extensión</a>
+        <a href="#" class="nav-link">Admisiones</a>
+        <a href="#" class="nav-link">Contacto</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="section">
+            <h2>Últimas Noticias</h2>
+            <div class="noticias">
+                <div class="noticia">
+                    <h3>Inauguración de Nuevo Edificio</h3>
+                    <p>La Universidad de Córdoba ha inaugurado un nuevo edificio para la Facultad de Ingeniería, equipado con laboratorios de última generación.</p>
+                </div>
+                <div class="noticia">
+                    <h3>Convocatoria para Becas 2024</h3>
+                    <p>Abierta la convocatoria para aplicar a las becas de excelencia académica para el próximo año académico.</p>
+                </div>
+                <div class="noticia">
+                    <h3>Semana Cultural 2024</h3>
+                    <p>¡Prepárate para la Semana Cultural con eventos, exposiciones y actividades para toda la comunidad!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Próximos Eventos</h2>
+            <div class="eventos">
+                <div class="evento">
+                    <h3>Feria de Ciencia</h3>
+                    <p>Fecha: 10 de octubre, 2024. Únete a nuestra feria anual de ciencia y descubre los proyectos de investigación de nuestros estudiantes.</p>
+                </div>
+                <div class="evento">
+                    <h3>Conferencia de Innovación Educativa</h3>
+                    <p>Fecha: 15 de noviembre, 2024. Aprende de expertos sobre las últimas tendencias en educación e innovación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Testimonios de Estudiantes</h2>
+            <div class="testimonios">
+                <div class="testimonio">
+                    <p>"La Universidad de Córdoba me ha brindado una educación de calidad y me ha preparado para enfrentar los desafíos profesionales."</p>
+                    <cite>- María Pérez, Ingeniería de Sistemas</cite>
+                </div>
+                <div class="testimonio">
+                    <p>"Las oportunidades de investigación y los recursos disponibles son impresionantes, siento que estoy en el lugar correcto."</p>
+                    <cite>- Juan Rodríguez, Biología</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contáctanos</h2>
+            <form class="formulario-contacto">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Universidad de Córdoba. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
